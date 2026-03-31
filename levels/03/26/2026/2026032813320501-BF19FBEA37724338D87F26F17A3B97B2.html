@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Sketch Layout</title>
+
+  <style>
+    @font-face {
+      font-family: 'SMM2';
+      src: url('https://smm2levelsin30seconds.github.io/super-mario-maker-2.otf') format('opentype');
+    }
+
+    body {
+      margin: 0;
+      font-family: 'SMM2', Arial, sans-serif;
+    }
+
+    /* Top bar */
+    .navbar {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      border-bottom: 3px solid red;
+      padding: 10px 20px;
+    }
+
+    .nav-left a,
+    .nav-center a {
+      text-decoration: none;
+      color: red;
+      font-size: 24px;
+    }
+
+    .nav-center {
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+
+    /* Image box */
+    .content {
+      padding: 40px 20px;
+    }
+
+    .image-box {
+      width: 200px;
+      border: 3px solid red;
+      padding: 10px;
+    }
+
+    .image-box img {
+      width: 100%;
+      display: block;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="navbar">
+    <div class="nav-center">
+      <a href="https://smm2levelsin30seconds.github.io/">Super Mario Maker 2 Levels In 30 Seconds</a>
+    </div>
+  </div>
+
+  <div class="content">
+    <center>
+<video width="1280" height="720" controls>
+  <source src="https://smm2levelsin30seconds.github.io/2026032813320501-BF19FBEA37724338D87F26F17A3B97B2.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
+    </center>
+  </div>
+
+</body>
+</html>
